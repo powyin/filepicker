@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="vw_BgItem">#353535</color>
+    <color name="vw_BgRv">#191919</color>
+    <color name="vw_BgRvFileDivider">#EEEEEE</color>
+    <color name="vw_BgToolBar">#373B3E</color>
+    <color name="vw_ShadowItem">#94333232</color>
+    <declare-styleable name="MaxHeightLayout"><attr format="reference|float" name="mhl_HeightRatio"/><attr format="reference|dimension" name="mhl_HeightDimen"/></declare-styleable>
+    <string name="vw_all">All</string>
+    <string name="vw_confirm">Done</string>
+    <string name="vw_no_audio_app">No audio App in this phone!</string>
+    <string name="vw_no_audio_play_app">No App exists for playing audio!</string>
+    <string name="vw_no_photo_app">No photo App in this phone!</string>
+    <string name="vw_no_video_app">No video App in this phone!</string>
+    <string name="vw_no_video_play_app">No App exists for playing video!</string>
+    <string name="vw_rationale_storage">Need Reading Storage Permission for Picking Files</string>
+    <string name="vw_record_audio">Record Audio</string>
+    <string name="vw_up_to_max">Already up to max</string>
+    <style name="vw_FilePickerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#292929</item>
+        <item name="colorPrimaryDark">#292929</item>
+        <item name="colorAccent">#292929</item>
+
+        <!-- 控制ToolBar右侧Menu弹出的位置 -->
+        <item name="actionOverflowMenuStyle">@style/vw_OverflowMenuStyle</item>
+
+        <!-- 单独配置ToolBar右侧Menu按钮即三个小圆点的颜色 -->
+        <!--<item name="colorControlNormal">#FFFFFF</item>-->
+
+        <!-- 配置所有字体颜色 -->
+        <!--<item name="android:textColorPrimary">#FFFFFF</item>-->
+
+        <!-- RecyclerView分割线 -->
+        <item name="android:listDivider">@drawable/vw_divider_rv</item>
+    </style>
+    <style name="vw_OverflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <!-- 弹出层背景颜色 -->
+        <item name="android:popupBackground">#000000</item>
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">4dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+    </style>
+    <style name="vw_ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- 非溢出菜单字体颜色，想要修改溢出菜单内的字体颜色只能直接设置textColorPrimary但此选项会影响Title的颜色-->
+        <!--<item name="actionMenuTextColor">#FFFFFF</item>-->
+        <item name="android:textSize">16sp</item> <!-- 字体大小 -->
+    </style>
+</resources>
